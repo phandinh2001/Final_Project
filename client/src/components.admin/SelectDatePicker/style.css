@@ -1,0 +1,72 @@
+.wrapper-date-picker {
+    padding: 50px 0;
+    position: relative;
+  }
+  .wrapper-date-picker .title{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 0;
+    background-color: white;
+  }
+  .wrapper-date-picker .line-date {
+    border-bottom: 1px dotted #ccc;
+  }
+  .wrapper-date-picker .date-picker {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  .wrapper-date-picker .date-picker span {
+    margin: 0 20px;
+  }
+  
+  /* date picker */
+  
+  /* Phông chữ */
+  
+  .react-datepicker-time__header {
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-datepicker-popper .react-datepicker__header,
+  .react-datepicker-weekday {
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  /* Màu sắc */
+  
+  .react-datepicker__day--selected {
+    background-color: #007bff;
+  }
+  
+  .react-datepicker__day--keyboard-selected {
+    background-color: rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Độ rộng */
+  
+  .react-datepicker-wrapper {
+    border: none;
+  }
+  .react-datepicker__input-container input {
+    width: 150px;
+    border-radius: 5px;
+    color: gray;
+    border-color: rgb(193, 193, 193);
+    padding: 0 10px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  /* .react-datepicker__input-container input:hover {
+    border-color: gray;
+  } */
+  
+  /* ////////////////////////////////////////// */

@@ -1,0 +1,33 @@
+.wrapper-create-acc {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrapper-create-acc .wrapper-input {
+  width: 300px;
+  margin: 10px 30px;
+  text-align: left;
+  height: 90px;
+}
+.wrapper-create-acc .message {
+  color: red;
+  height: 20px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+.btn-create {
+  text-align: center;
+}
+.wrapper-create-acc .checkbox {
+  display: flex;
+  align-items: center;
+}
+.wrapper-avatar-account {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

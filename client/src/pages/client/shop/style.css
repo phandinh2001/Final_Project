@@ -1,0 +1,10 @@
+.bg-light > .container-product {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+.wrapper-search {
+    display: flex;
+    margin-bottom: 20px;
+}

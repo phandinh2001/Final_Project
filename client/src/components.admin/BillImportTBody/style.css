@@ -1,0 +1,15 @@
+.wrapper-status-td {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-pay-td {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.next-status,
+.next-pay {
+  margin: 3px 5px 0 0;
+  cursor: pointer;
+}

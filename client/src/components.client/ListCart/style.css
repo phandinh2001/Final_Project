@@ -1,0 +1,29 @@
+.wrapper-btn-add {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.wrapper-btn-add .total-price {
+  font-family: monospace;
+  font-size: 20px;
+  margin: 10px 0 20px;
+  font-weight: 900;
+}
+
+.wrapper-btn-add .btn-add {
+  color: white;
+  background-color: rgb(4, 213, 0);
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper-btn-add .btn-add:hover{
+    background-color: rgba(4, 213, 0, 0.722);
+}

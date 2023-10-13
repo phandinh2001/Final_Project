@@ -1,0 +1,24 @@
+.open-account,
+.lock-up-account {
+  width: 70px;
+  height: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.open-account {
+  background-color: rgba(0, 231, 8, 0.707);
+}
+.open-account:hover {
+    background-color: rgb(0, 192, 6);
+  }
+.lock-up-account {
+    background-color: rgba(255, 59, 59, 0.837);
+}
+.lock-up-account:hover {
+    background-color: rgb(255, 0, 0);
+}
+

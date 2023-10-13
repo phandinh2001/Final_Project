@@ -1,0 +1,50 @@
+.container-bill-of-sale {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper-client {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  height: 80px;
+}
+.wrapper-client > div {
+  margin-right: 10px;
+}
+.receiver-information {
+  font-weight: 900;
+}
+.container-bill-of-sale .wrapper-information {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+.container-bill-of-sale .row-detail-bill {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.container-bill-of-sale .column-1 {
+  width: 115px;
+  font-weight: 510;
+  box-sizing: border-box;
+}
+.container-bill-of-sale .bill {
+  font-weight: 900;
+}
+.container-bill-of-sale .wrapper-bill > .row-detail-bill > .column-1 {
+  width: 200px;
+}
+
+.container-bill-of-sale .detail-bill {
+  font-weight: 900;
+  margin: 20px 0;
+}
+.container-bill-of-sale .wrapper-bill {
+  order: -1;
+}
+.container-bill-of-sale .wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+}

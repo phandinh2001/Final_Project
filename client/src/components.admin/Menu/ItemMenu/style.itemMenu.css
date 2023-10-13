@@ -1,0 +1,19 @@
+.wrapper-children-item-menu {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  position: relative;
+  width: 100%;
+}
+.wrapper-children-item-menu > .children {
+  padding-left: 10px;
+  /* margin-top: 5px; */
+}
+.wrapper-children-item-menu > .icon-right,
+.wrapper-children-item-menu > .icon-left {
+  margin-top: 5px;
+}
+.wrapper-children-item-menu > .icon-right{
+    position: absolute;
+    right: 10px;
+}

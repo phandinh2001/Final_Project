@@ -1,0 +1,57 @@
+.wrapper-menu {
+  width: 300px;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: rgba(31, 41, 55, 1);
+  position: relative;
+  /* position:sticky; */
+  /* z-index: -1; */
+}
+.wrapper-menu > .logo {
+  background-color: rgba(17, 24, 39);
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 24, 39, 1);
+}
+.wrapper-menu >.menu-bottom{
+  /* height: 100%; */
+  overflow: hidden;
+}
+.wrapper-menu >.menu-bottom >.wrapper-item {
+  width: 100%;
+  overflow-y: auto;
+  /* height: 100px;
+  background-color: red; */
+}
+.wrapper-menu>.menu-bottom > .wrapper-item .item {
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 5px 15px;
+  border-bottom: 1px solid rgba(17, 24, 39, 1);
+}
+.wrapper-menu >.menu-bottom> .wrapper-item .item:hover {
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.line {
+  border: 1px solid rgb(154, 154, 154);
+  background-color: rgb(154, 154, 154);
+  width: 100%;
+  height: 2px;
+}
+.wrapper-menu .logout {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

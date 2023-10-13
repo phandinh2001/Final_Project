@@ -1,0 +1,155 @@
+.wrapper-create-Product {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrapper-create-Product .wrapper-input {
+  width: 220px;
+  margin: 10px 15px;
+  text-align: left;
+  height: 90px;
+}
+.wrapper-create-Product .wrapper-editor {
+  margin: 0 18px;
+  width: 100%;
+  padding: 0 30px;
+}
+.btn-create-product {
+  text-align: center;
+  margin-top: 30px;
+}
+.select-product {
+  width: 220px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 8px;
+  border: gray;
+}
+
+.wrapper-color-size {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.wrapper-color-size > .left .wrapper-input {
+  margin: 10px 15px;
+  text-align: left;
+  height: 90px;
+}
+.wrapper-color-size > .right {
+  padding-top: 50px;
+  width: 300px;
+}
+.table-size-quantity {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 5px;
+}
+.table-size-quantity:hover {
+  background-color: rgb(227, 227, 227);
+}
+.table-size-quantity span {
+  margin: 0 5px;
+}
+
+.wrapper-title-model {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-image-roduct {
+  width: 100%;
+  text-align: center;
+  /* display: flex; */
+}
+.wrapper-image-roduct > .wrapper-image {
+  height: 200px;
+}
+.wrapper-list-img {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wrapper-list-img > .wrapper-img-item > .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+.wrapper-img-item {
+  position: relative;
+}
+.wrapper-img-item > .mark {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+.line {
+  border-top: 1px solid gray;
+}
+
+/* .wrapper-color-size > .right table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  height: 50px;
+} */
+.wrapper-color-size > .right tr:hover {
+  background-color: white;
+  /* cursor: pointer; */
+}
+.wrapper-btn-color-size {
+  display: flex;
+}
+.wrapper-color-size > .right .mark {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(211, 211, 211, 0.638);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-color-size > .right .mark:hover {
+  background-color: rgba(211, 211, 211);
+}
+.wrapper-Item-size {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.wrapper-Item-size .mark{
+  margin: 0 5px;
+}
+.color-item {
+  width: 100px;
+  cursor: pointer;
+}
+.color-item:hover {
+  background-color: rgb(227, 227, 227);
+}

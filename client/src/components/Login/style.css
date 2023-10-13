@@ -1,0 +1,14 @@
+.form-login .forgot-password {
+  margin: 10px 0 0;
+  cursor: pointer;
+  color: blue;
+}
+
+.form-login .forgot-password:hover {
+  text-decoration-line: underline;
+}
+.wrapper-auth .message {
+  color: red;
+  height: 20px;
+  font-size: 12px;
+}

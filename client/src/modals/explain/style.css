@@ -1,0 +1,19 @@
+.wrapper-explain {
+  background-color: rgba(0, 0, 0, 0.358);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-explain > .arrow-up {
+  width: 0;
+  height: 0;
+  /* border-top: 10px solid black; */
+  border-bottom: 5px solid rgba(0, 0, 0, 0.358);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.wrapper-explain > title {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.358);
+}

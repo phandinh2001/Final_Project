@@ -1,0 +1,19 @@
+.wrapper-create-bill {
+  width: 100%;
+}
+.wrapper-create-bill .wrapper-input {
+  width: 300px;
+  margin: 30px 30px 10px;
+  text-align: left;
+  height: 90px;
+}
+.wrapper-btn-client {
+  width: 300px;
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.information-client {
+  display: flex;
+  justify-content: space-between;
+}

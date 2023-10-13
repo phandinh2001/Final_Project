@@ -1,0 +1,44 @@
+.wrapper-choose-product {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper-choose-product > .wrapper-input {
+  width: 200px;
+  margin: 30px 30px 10px;
+  text-align: left;
+  height: 70px;
+}
+.wrapper-choose-product > .wrapper-input-name {
+  width: 100%;
+  margin: 10px 30px;
+  text-align: left;
+  height: 70px;
+}
+#choose-pro {
+  width: 100%;
+  overflow: hidden;
+}
+#choose-pro * {
+  width: 100px;
+  overflow: hidden;
+}
+
+.wrapper-list-pro {
+  width: 100%;
+}
+.icon {
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wrapper-list-pro td{
+  border-color: white;
+}

@@ -1,0 +1,12 @@
+.error {
+  text-align: center;
+  color: red;
+  margin: 5px;
+}
+.detail-client{
+    margin-top: 40px;
+}
+.detail-client > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}

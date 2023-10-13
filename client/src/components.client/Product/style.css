@@ -1,0 +1,8 @@
+.row-product {
+  margin: 0;
+  width: 100%;
+}
+
+.rating > .text-right {
+  color: rgba(0, 0, 0, 0.54);
+}

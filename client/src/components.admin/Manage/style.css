@@ -1,0 +1,33 @@
+.wrapper-manage .list-manage {
+  display: none;
+  background-color: rgba(17, 24, 39, 1);
+  color: white;
+  overflow-y: auto;
+}
+.wrapper-manage .animation {
+  display: block;
+  animation-name: manage;
+  animation-duration: 2s;
+}
+.wrapper-manage .list-manage > .item-manage {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.wrapper-manage .list-manage > .item-manage:hover {
+  background-color: rgb(72, 72, 72);
+}
+
+/* @keyframes manage {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+} */
+

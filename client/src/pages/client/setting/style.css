@@ -1,0 +1,11 @@
+.wrapper-avatar-client {
+  align-items: center;
+  flex-direction: column;
+}
+.clear-avatar {
+  cursor: pointer;
+  margin: 10px 0;
+}
+.clear-avatar:hover {
+  color: blue;
+}

@@ -1,0 +1,9 @@
+.avatar-dropzone {
+  border: solid 1px #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wfp--dropzone {
+  border-radius: 50%;
+  overflow: hidden;
+}
