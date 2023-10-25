@@ -18,7 +18,7 @@
   position: relative;
 }
 .wrapper-slider > .promotion {
-  background-color: rgb(255, 255, 39);
+  background-color: #f16654;
   width: 40px;
   height: 50px;
   position: absolute;
@@ -28,10 +28,19 @@
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(92, 92, 92);
+  color: rgb(235, 234, 234);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.style-1 .paginationUL .pageItem .pageButton:hover {
+  background-color: #f16654 !important;
+}
+
+.style-1 .paginationUL .pageItem .activeButton {
+  background-color: #f16654 !important;
 }
 
 .wrapper-color,

@@ -42,7 +42,7 @@ const Authentication = () => {
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
-              <div className="title-website" onClick={handleToShop}>
+              <div className="title-website" onClick={handleToShop} >
                 DPV
               </div>
               <h3>Chào mừng trở lại!</h3>

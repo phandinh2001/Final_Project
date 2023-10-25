@@ -142,7 +142,7 @@ const Header = ({ avtStr }: Props) => {
         id="ftco-navbar"
       >
         <div className="container">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={"/"} className="navbar-brand" style={{fontSize: 40, fontWeight: 300, fontFamily: 'Script'}}>
             DPV
           </Link>
           <button
@@ -189,7 +189,7 @@ const Header = ({ avtStr }: Props) => {
                       ) : (
                         <Avatar
                           size={32}
-                          UNSAFE_style={{ background: "#00b3f4" }}
+                          UNSAFE_style={{ background: "#f16654" }}
                         >
                           {avtStr}
                         </Avatar>

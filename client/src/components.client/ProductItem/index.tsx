@@ -350,7 +350,7 @@ const ProductItem = ({ product }: Props) => {
               <tr>
                 <td></td>
                 <td>
-                  <div className="btn" style={{ marginTop: "30px" }}>
+                  <div className="btn" style={{ marginTop: "30px"}}>
                     <Button color="accentPrimary" onPress={handleAddToCart}>
                       Thêm vào giỏ hàng
                     </Button>

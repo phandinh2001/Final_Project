@@ -14,11 +14,11 @@ export const listItem = [
     icon: IconIc24Fill4SquareMenu,
     url: "/admin/quan_ly",
   },
-  {
-    children: "Tin Nhắn",
-    icon: IconIc24FillBubbleEllipseDot,
-    url: "/admin/tin_nhan",
-  },
+  // {
+  //   children: "Tin Nhắn",
+  //   icon: IconIc24FillBubbleEllipseDot,
+  //   url: "/admin/tin_nhan",
+  // },
   {
     children: "Hồ sơ",
     icon: IconIc24FillPersonGear,

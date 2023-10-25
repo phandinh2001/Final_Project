@@ -8,7 +8,7 @@ const Item = ({ product, sold = 0 }: Props) => {
   return (
     <div className="colum" style={{ margin: "0px 15px" }}>
       <div className="product" style={{ width: "250px" }}>
-        <Link to={"#"} className="img-prod">
+        <Link to={"/shop/" + product._id} className="img-prod">
           <img
             className="img-fluid"
             src={`/assets/img_product/${product.Anh[0]}`}
@@ -21,7 +21,7 @@ const Item = ({ product, sold = 0 }: Props) => {
           <div className="overlay"></div>
         </Link>
         <div className="text py-3 px-3">
-          <Link to={"#"} className="product-name">
+          <Link to={"/shop/" + product._id} className="product-name">
             {product.Ten}
           </Link>
           <div className="d-flex">

@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../../assets/images/about.jpg";
+import about from "../../../assets/images/tlu.jpg";
 
 const Section_2 = () => {
   return (
@@ -11,7 +11,7 @@ const Section_2 = () => {
             style={{ backgroundImage: `url(${about})` }}
           >
             <a
-              href="https://vimeo.com/45830194"
+              href="https://www.facebook.com/daihocthuyloi1959/videos/1120146158573407?locale=vi_VN"
               className="icon popup-vimeo d-flex justify-content-center align-items-center"
             >
               <span className="icon-play"></span>
@@ -20,11 +20,10 @@ const Section_2 = () => {
           <div className="col-md-7 py-5 wrap-about pb-md-5 ">
             <div className="heading-section-bold mb-4 mt-md-5">
               <div className="ml-md-0">
-                <h2 className="mb-4">Cách tốt hơn để vận chuyển sản phẩm của bạn</h2>
+                <h2 className="mb-4" style={{fontWeight: 300, textTransform: 'uppercase', letterSpacing: 1, fontSize: 36}}>Cách tốt hơn để vận chuyển sản phẩm của bạn</h2>
               </div>
             </div>
-            <div className="pb-md-5">
-
+            <div className="pb-md-5 mt-5">
               <div className="row ftco-services">
                 <div className="col-lg-4 text-center d-flex align-self-stretch ">
                   <div className="media block-6 services">
@@ -32,7 +31,7 @@ const Section_2 = () => {
                       <span className="flaticon-002-recommended"></span>
                     </div>
                     <div className="media-body">
-                      <h3 className="heading">CHÍNH SÁCH HOÀN TIỀN</h3>
+                      <h3 className="heading">HOÀN TIỀN</h3>
                     </div>
                   </div>
                 </div>
@@ -42,7 +41,7 @@ const Section_2 = () => {
                       <span className="flaticon-001-box"></span>
                     </div>
                     <div className="media-body">
-                      <h3 className="heading">BAO BÌ CAO CẤP</h3>   
+                      <h3 className="heading">BAO BÌ CAO CẤP</h3>
                     </div>
                   </div>
                 </div>

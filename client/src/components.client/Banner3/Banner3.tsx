@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg_6 from "../../assets/images/bgr_store.jpg";
+import bg_6 from "../../assets/images/contact_bgr_3.jpg";
 interface Props{
     title?:string,
     bread?:string
     backgroundImg?:string
     fun?:(a,b)=>void
 }
-const Banner = ({title="",bread="",backgroundImg=bg_6}:Props) => {
+const Banner3 = ({title="",bread="",backgroundImg=bg_6}:Props) => {
   const func = (a,b)=>{
     return a+b
   }
@@ -35,4 +35,4 @@ const Banner = ({title="",bread="",backgroundImg=bg_6}:Props) => {
   );
 };
 
-export default Banner;
+export default Banner3;

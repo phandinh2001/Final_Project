@@ -49,7 +49,7 @@ const DeliveryAddress = ({
   };
   return (
     <div className="delivery-address">
-      <div className="vtrWey"></div>
+      {/* <div className="vtrWey"></div> */}
       <div className="content">
         <div className="title-address">
           <IconIc24FillPinlocation size={18} color="negativePrimary" />

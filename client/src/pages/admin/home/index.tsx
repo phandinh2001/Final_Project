@@ -8,7 +8,7 @@ import "./style.css";
 import ProductBestSale from "../../../components.admin/ProductBestSale";
 import ClientBuyBest from "../../../components.admin/ClientBuyBest";
 import Inventory from "../../../components.admin/Inventory";
-import ChartRevenue from "../../../components.admin/ChartRevenue";
+// import ChartRevenue from "../../../components.admin/ChartRevenue";
 const Home = () => {
   const [dateStartRevenue, setDateStartRevenue] = useState(new Date());
   const [dateEndRevenue, setDateEndRevenue] = useState(new Date());
@@ -41,7 +41,7 @@ const Home = () => {
           title="Doanh thu cửa hàng"
         />
         <DataMoney dateStart={dateStartRevenue} dateEnd={dateEndRevenue} />
-        <ChartRevenue />
+        {/* <ChartRevenue /> */}
         <SelectDatePicker
           dateStart={dateStart}
           dateEnd={dateEnd}

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Banner from "../../../components.client/Banner/Banner";
+import Banner3 from "../../../components.client/Banner3/Banner3";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../stores";
 import ListCart from "../../../components.client/ListCart";
@@ -18,7 +18,7 @@ const Cart = () => {
 
   return (
     <div>
-      <Banner title="Giỏ Hàng" bread="Giỏ Hàng của tôi" />
+      <Banner3 title="Giỏ Hàng" bread="Giỏ Hàng của tôi" />
       <section className="ftco-section ftco-cart">
         <div className="container">
           {clientItem && Object.keys(clientItem).length > 0 ? (

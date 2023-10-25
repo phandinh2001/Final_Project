@@ -46,7 +46,7 @@
   background-color: rgb(17, 128, 255);
 }
 .bg-color-delete {
-  background-color: rgba(250, 82, 82, 0.786);
+  background-color: #f16654;
 }
 .bg-color-delete:hover {
   background-color: rgba(239, 68, 68, 1);

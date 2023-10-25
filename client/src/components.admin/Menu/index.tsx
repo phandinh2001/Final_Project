@@ -24,7 +24,7 @@ const Menu = ({ avtStr }: Props) => {
   };
   return (
     <div className="wrapper-menu">
-      <div className="logo">Admin Store</div>
+      <div className="logo">Admin DPV</div>
       <div className="menu-bottom">
         <div className="wrapper-item">
           {listItem.map((item, index) => {

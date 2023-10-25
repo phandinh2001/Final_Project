@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg_6 from "../../assets/images/bgr_store.jpg";
+import bg_6 from "../../assets/images/contact_bgr_2.jpg";
 interface Props{
     title?:string,
     bread?:string
     backgroundImg?:string
     fun?:(a,b)=>void
 }
-const Banner = ({title="",bread="",backgroundImg=bg_6}:Props) => {
+const Banner2 = ({title="",bread="",backgroundImg=bg_6}:Props) => {
   const func = (a,b)=>{
     return a+b
   }
@@ -27,7 +27,7 @@ const Banner = ({title="",bread="",backgroundImg=bg_6}:Props) => {
               </span>
               <span style={{color:  '#E0E0E0'}}>{title}</span>
             </p>
-            <h1 className="mb-0 bread" style={{fontFamily: "Open Sans", color:  '#E0E0E0'}}> {bread}</h1>
+            <h1 className="mb-0 bread" style={{fontFamily: "Open Sans", color:  '#E0E0E0'}}>{bread}</h1>
           </div>
         </div>
       </div>
@@ -35,4 +35,4 @@ const Banner = ({title="",bread="",backgroundImg=bg_6}:Props) => {
   );
 };
 
-export default Banner;
+export default Banner2;

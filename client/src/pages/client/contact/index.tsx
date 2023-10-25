@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-import Banner from "../../../components.client/Banner/Banner";
+import Banner2 from "../../../components.client/Banner2/Banner";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
     <>
-      <Banner title="Liên hệ" bread="LIÊN HỆ CHÚNG TÔI" />
+      <Banner2 title="Liên hệ" bread="LIÊN HỆ CHÚNG TÔI" />
       <section className="ftco-section contact-section bg-light">
         <div className="container">
           <div className="row d-flex mb-5 contact-info">

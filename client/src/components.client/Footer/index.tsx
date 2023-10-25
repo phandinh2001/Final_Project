@@ -19,8 +19,8 @@ const Footer = () => {
           <div className="row mb-5">
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
-                <h2 className="ftco-heading-2">DPV</h2>
-                <ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <h2 className="ftco-heading-2" style={{fontSize: 30}}>DPV</h2>
+                <ul className="ftco-footer-social list-unstyled float-md-left float-lft">
                   <li className="">
                     <Link to={"#"}>
                       <span className="icon-twitter"></span>
@@ -66,14 +66,14 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md">
               <div className="ftco-footer-widget mb-4">
                 <h2 className="ftco-heading-2">GIÚP ĐỠ</h2>
                 <div className="d-flex">
                   <ul className="list-unstyled mr-l-5 pr-l-3 mr-4">
                     <li>
                       <Link to={"#"} className="py-2 d-block">
-                        thông tin vận chuyển
+                        Thông tin vận chuyển
                       </Link>
                     </li>
                     <li>
