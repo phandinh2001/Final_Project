@@ -60,11 +60,11 @@ const Inventory = ({ handleNext = () => {}, handlePrev = () => {} }: Props) => {
       <table>
         <thead>
           <tr>
-            <th>STT</th>
+            <th style={{textAlign: 'center'}}>STT</th>
             <th></th>
-            <th style={{ width: "300px" }}>Tên sản phẩm</th>
-            <th>Số lượng tồn</th>
-            <th>Đã bán</th>
+            <th style={{ width: "300px", textAlign: 'center' }}>Tên sản phẩm</th>
+            <th style={{textAlign: 'center'}}>Số lượng tồn</th>
+            <th style={{textAlign: 'center'}}>Đã bán</th>
             <th></th>
           </tr>
         </thead>
@@ -78,15 +78,15 @@ const Inventory = ({ handleNext = () => {}, handlePrev = () => {} }: Props) => {
               });
               return (
                 <tr key={ind}>
-                  <td>{ind + 1}</td>
+                  <td style={{textAlign: 'center'}}>{ind + 1}</td>
                   <td>
                     <Slider slideImg={pro.Anh} url="/assets/img_product/" />
                   </td>
                   <td>
                     <div className="name-product-limit-1">{pro.Ten} </div>
                   </td>
-                  <td>{pro.SoLuong}</td>
-                  <td>{sold}</td>
+                  <td style={{textAlign: 'center'}}>{pro.SoLuong}</td>
+                  <td style={{textAlign: 'center'}}>{sold}</td>
                   <td>
                     <div className="wrapper-icon">
                       <div

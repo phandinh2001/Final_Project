@@ -58,14 +58,14 @@ const BillImportTBody = () => {
         listBill.map((bill, ind) => {
           return (
             <tr key={ind}>
-              <td>{bill.MaHD}</td>
-              <td>{bill.MaNCC}</td>
-              <td>{formatDate(bill.Ngay)}</td>
-              <td>{bill.TongTien}</td>
-              <td>
-                <div className="wrapper-pay-td">
+              <td style={{textAlign: 'center'}}>{bill.MaHD}</td>
+              <td style={{textAlign: 'center'}}>{bill.MaNCC}</td>
+              <td style={{textAlign: 'center'}}>{formatDate(bill.Ngay)}</td>
+              <td style={{textAlign: 'center'}}>{bill.TongTien}</td>
+              <td style={{textAlign: 'center'}}>
+                <div >
                   <div>
-                    {bill.ThanhToan ? "Đã thanh toán" : "chưa thanh toán"}
+                    {bill.ThanhToan ? "Đã thanh toán" : "Chưa thanh toán"}
                   </div>
                   {!bill.ThanhToan && !bill.Huy ? (
                     <div
@@ -79,8 +79,8 @@ const BillImportTBody = () => {
                   )}
                 </div>
               </td>
-              <td>
-                <div className="wrapper-status-td">
+              <td style={{textAlign: 'center'}}>
+                <div >
                   <div>{listStatus[bill.TrangThai]}</div>
                   {bill.TrangThai === 0 && (
                     <div

@@ -41,13 +41,13 @@ const ClientTBody = () => {
       {listClient &&
         listClient.map((client, ind) => (
           <tr key={ind}>
-            <td>{client.Ma}</td>
-            <td>{client.Ten}</td>
-            <td>{client.SDT}</td>
-            <td>{new Date(client.NgaySinh).toLocaleDateString()}</td>
-            <td>{convertSex(client.GioiTinh)}</td>
-            <td>{client.Email}</td>
-            <td>{client.DiaChi}</td>
+            <td style={{textAlign: 'center'}}>{client.Ma}</td>
+            <td style={{textAlign: 'center'}}>{client.Ten}</td>
+            <td style={{textAlign: 'center'}}>{client.SDT}</td>
+            <td style={{textAlign: 'center'}}>{new Date(client.NgaySinh).toLocaleDateString()}</td>
+            <td style={{textAlign: 'center'}}>{convertSex(client.GioiTinh)}</td>
+            <td style={{textAlign: 'center'}}>{client.Email}</td>
+            <td >{client.DiaChi}</td>
             <td>
               {findPhoneInArr(listAccount, client.SDT) === false ? (
                 <div className="wrapper-icon">

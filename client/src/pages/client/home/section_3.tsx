@@ -23,7 +23,7 @@ const Section_3 = () => {
         <div className="container">
           <div className="row justify-content-center mb-3 pb-3">
             <div className="col-md-12 heading-section text-center ">
-              <h2 className="mb-4">Sản phẩm bán chạy nhất</h2>
+              <h2 className="mb-4" style={{fontWeight: 300, textTransform: 'uppercase', letterSpacing: 1, fontSize: 36}}>Sản phẩm bán chạy nhất</h2>
             </div>
           </div>
         </div>

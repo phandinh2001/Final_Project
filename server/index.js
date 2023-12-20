@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 
-import db from "./DAL/database";
+import db from "./DAL/database.js";
 import userRouter from "./routers/users";
 import productRouter from "./routers/products";
 import detailCategoryRouter from "./routers/detailCategory";

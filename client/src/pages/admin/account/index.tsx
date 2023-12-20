@@ -21,10 +21,10 @@ const Account = () => {
           <thead>
             <tr>
               <th></th>
-              <th>Họ và tên</th>
-              <th>Số điện thoại</th>
-              <th>Ngày sinh</th>
-              <th>Phân Quyền</th>
+              <th style={{textAlign: 'center'}}>Họ và tên</th>
+              <th style={{textAlign: 'center'}}>Số điện thoại</th>
+              <th style={{textAlign: 'center'}}>Ngày sinh</th>
+              <th style={{textAlign: 'center'}}>Phân Quyền</th>
               <th></th>
             </tr>
           </thead>

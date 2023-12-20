@@ -48,9 +48,9 @@ const CategoryDetail = () => {
       {detailCategory &&
         detailCategory.map((valDetail, ind) => (
           <tr key={ind}>
-            <td>{valDetail.Ma}</td>
-            <td>{valDetail.Ten}</td>
-            <td>
+            <td style={{textAlign: 'center'}}>{valDetail.Ma}</td>
+            <td style={{textAlign: 'center'}}>{valDetail.Ten}</td>
+            <td style={{textAlign: 'center'}}>
               {categories.map((valCate) => {
                 if (valDetail.MaLoai === valCate.Ma) return valCate.Ten;
                 return "";

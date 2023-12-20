@@ -46,9 +46,9 @@ const DetailTable = () => {
         <table >
           <thead>
             <tr>
-              <th>Mã</th>
-              <th>Chi tiết Loại</th>
-              <th>
+              <th style={{textAlign: 'center'}}>Mã</th>
+              <th style={{textAlign: 'center'}}>Chi tiết Loại</th>
+              <th style={{textAlign: 'center'}}>
                 <span>Loại sản phẩm</span>
                 {sortByCate ? (
                   <span className="icon-sort" onClick={handleSortDown}>

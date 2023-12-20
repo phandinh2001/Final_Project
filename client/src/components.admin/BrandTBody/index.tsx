@@ -39,8 +39,8 @@ const BrandTBody = () => {
       {listBrand &&
         listBrand.map((brand, ind) => (
           <tr key={ind}>
-            <td>{brand.Ma}</td>
-            <td>{brand.Ten}</td>
+            <td style={{textAlign: 'center'}}>{brand.Ma}</td>
+            <td style={{textAlign: 'center'}}>{brand.Ten}</td>
             <td>
               <div className="wrapper-icon">
                 <Link

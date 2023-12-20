@@ -24,8 +24,8 @@ const CategoryTable = () => {
         <table >
           <thead>
             <tr>
-              <th>Mã</th>
-              <th>Loại sản phẩm</th>
+              <th style={{textAlign: 'center'}}>Mã</th>
+              <th style={{textAlign: 'center'}}>Loại sản phẩm</th>
               <th style={{ width: "100px" }}></th>
             </tr>
           </thead>

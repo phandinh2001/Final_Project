@@ -99,7 +99,7 @@ const ProductBestSale = ({
           </tbody>
         </table>
       ) : (
-        <div style={{ padding: "10px 0" }}>chưa có sản phẩm nào</div>
+        <div style={{ padding: "10px 0", textAlign: 'center' }}>Chưa có sản phẩm nào</div>
       )}
       {openModelDetail && (
         <DetailProduct

@@ -19,14 +19,14 @@ const BillOfSale = () => {
         <table>
           <thead>
             <tr>
-              <th>hóa đơn</th>
-              <th>khách hàng</th>
-              <th>Ngày lập</th>
-              <th>Người lập</th>
-              <th>Tổng tiền</th>
-              <th>Thanh toán</th>
-              <th className="col-status">Trạng thái</th>
-              <th>Hủy đơn</th>
+              <th style={{textAlign: 'center'}}>Hóa đơn</th>
+              <th style={{textAlign: 'center'}}>Khách hàng</th>
+              <th style={{textAlign: 'center'}}>Ngày lập</th>
+              <th style={{textAlign: 'center'}}>Người lập</th>
+              <th style={{textAlign: 'center'}}>Tổng tiền</th>
+              <th style={{textAlign: 'center'}}>Thanh toán</th>
+              <th className="col-status" style={{textAlign: 'center'}}>Trạng thái</th>
+              <th >Hủy đơn</th>
               <th></th>
             </tr>
           </thead>

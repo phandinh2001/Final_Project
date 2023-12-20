@@ -19,8 +19,8 @@ const Brand = () => {
         <table>
           <thead>
             <tr>
-              <th>Mã</th>
-              <th>Tên Thương hiệu</th>
+              <th style={{textAlign: 'center'}}>Mã</th>
+              <th style={{textAlign: 'center'}}>Tên Thương hiệu</th>
               <th style={{ width: "100px" }}></th>
             </tr>
           </thead>

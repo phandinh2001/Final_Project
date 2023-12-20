@@ -43,21 +43,21 @@ const Products = () => {
     <>
       {products.map((pro: any, index: any) => (
         <tr key={index}>
-          <td>{pro.Ma}</td>
+          <td style={{textAlign: 'center'}}>{pro.Ma}</td>
           <td>
             <Slider slideImg={pro.Anh} url="/assets/img_product/" />
           </td>
           <td style={{ maxWidth: "300px" }}>
             <div className="name-product-limit-1">{pro.Ten}</div>
           </td>
-          <td>{pro.GiaBan}</td>
-          <td>{pro.SoLuong}</td>
-          <td>
+          <td style={{textAlign: 'center'}}>{pro.GiaBan}</td>
+          <td style={{textAlign: 'center'}}>{pro.SoLuong}</td>
+          <td style={{textAlign: 'center'}}>
             {detailCategory.map((value : any) => {
               return value.Ma === pro.MaLoai ? value.Ten : "";
             })}
           </td>
-          <td>{convertSex(pro.GioiTinh)}</td>
+          <td style={{textAlign: 'center'}}>{convertSex(pro.GioiTinh)}</td>
           <td>
             <div className="wrapper-icon">
               <Link

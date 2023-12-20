@@ -22,7 +22,7 @@ const DetailProduct = () => {
 
   return (
     <div>
-      <Banner title="Sản phẩm" bread="BỘ SƯU TẬP SẢN PHẨM" />
+      <Banner title="Sản phẩm" bread="CHI TIẾT SẢN PHẨM" />
       {productItem ? (
         <section className="ftco-section bg-light">
           <div className="container">

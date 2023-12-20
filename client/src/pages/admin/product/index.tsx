@@ -28,13 +28,13 @@ const Product = () => {
         <table className="">
           <thead>
             <tr>
-              <th>Mã</th>
+              <th style={{textAlign: 'center'}}>Mã</th>
               <th></th>
-              <th>Tên sản phẩm</th>
-              <th>Giá bán</th>
-              <th>Số lượng</th>
-              <th>Loại</th>
-              <th>Giới tính</th>
+              <th style={{textAlign: 'center'}}>Tên sản phẩm</th>
+              <th style={{textAlign: 'center'}}>Giá bán</th>
+              <th style={{textAlign: 'center'}}>Số lượng</th>
+              <th style={{textAlign: 'center'}}>Loại</th>
+              <th style={{textAlign: 'center'}}>Giới tính</th>
               <th></th>
             </tr>
           </thead>

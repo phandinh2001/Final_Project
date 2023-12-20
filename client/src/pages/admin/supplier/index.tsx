@@ -20,10 +20,10 @@ const Supplier = () => {
         <table>
           <thead>
             <tr>
-              <th>Mã</th>
-              <th>Tên công ty</th>
-              <th>Số điện thoại</th>
-              <th>Địa chỉ</th>
+              <th style={{textAlign: 'center'}}>Mã</th>
+              <th style={{textAlign: 'center'}}>Tên công ty</th>
+              <th style={{textAlign: 'center'}}>Số điện thoại</th>
+              <th style={{textAlign: 'center'}}>Địa chỉ</th>
               <th style={{ width: "100px" }}></th>
             </tr>
           </thead>

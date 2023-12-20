@@ -12633,7 +12633,8 @@ h5,
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .product .img-prod .overlay {

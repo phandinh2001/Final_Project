@@ -27,7 +27,7 @@ const AccountTBody = () => {
         listAccount.map((acc, ind) => {
           return (
             <tr key={ind}>
-              <td height={50} width={60}>
+              <td height={50} width={60} style={{textAlign: 'center'}}>
                 {acc.Anh ? (
                   <Avatar
                     src={`${acc.Anh}`}
@@ -40,12 +40,12 @@ const AccountTBody = () => {
                   </Avatar>
                 )}
               </td>
-              <td>{acc.Ten}</td>
-              <td>{acc.SDT}</td>
-              <td>{new Date(acc.NgaySinh).toLocaleDateString()}</td>
-              <td>{convertIsAdmin(acc.PhanQuyen)}</td>
+              <td style={{textAlign: 'center'}}>{acc.Ten}</td>
+              <td style={{textAlign: 'center'}}>{acc.SDT}</td>
+              <td style={{textAlign: 'center'}}>{new Date(acc.NgaySinh).toLocaleDateString()}</td>
+              <td style={{textAlign: 'center'}}>{convertIsAdmin(acc.PhanQuyen)}</td>
               <td>
-                {user.phone !== acc.SDT ? (
+                { user.phone !== acc.SDT && acc.PhanQuyen === 'KhachHang' ? (
                   acc.KhoaTK === false ? (
                     <div
                       className="lock-up-account"

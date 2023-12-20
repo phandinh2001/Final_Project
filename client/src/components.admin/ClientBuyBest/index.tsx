@@ -109,7 +109,7 @@ handlePrev = () => {},}: Props) => {
             </tbody>
           </table>
         ) : (
-          <div style={{ padding: "10px 0" }}>chưa có Khách hàng nào</div>
+          <div style={{ padding: "10px 0", textAlign: 'center' }}>Chưa có Khách hàng nào</div>
         )}
       </>
     </WrapperTableHome>

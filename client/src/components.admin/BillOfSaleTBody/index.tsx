@@ -66,15 +66,15 @@ const BillOfSaleTBody = () => {
       {listBill &&
         listBill.map((bill, ind) => (
           <tr key={ind}>
-            <td>{bill.MaHD}</td>
-            <td>{bill.MaKH}</td>
-            <td>{new Date(bill.Ngay).toLocaleDateString()}</td>
-            <td>{bill.NguoiLap === "QuanLy" ? "Quản lý" : "Khách hàng"}</td>
-            <td>{bill.TongTien}</td>
-            <td>
-              <div className="wrapper-pay-td">
+            <td style={{textAlign: 'center'}}>{bill.MaHD}</td>
+            <td style={{textAlign: 'center'}}>{bill.MaKH}</td>
+            <td style={{textAlign: 'center'}}>{new Date(bill.Ngay).toLocaleDateString()}</td>
+            <td style={{textAlign: 'center'}}>{bill.NguoiLap === "QuanLy" ? "Quản lý" : "Khách hàng"}</td>
+            <td style={{textAlign: 'center'}}>{bill.TongTien}</td>
+            <td style={{textAlign: 'center'}}>
+              <div >
                 <div>
-                  {bill.ThanhToan ? "Đã thanh toán" : "chưa thanh toán"}
+                  {bill.ThanhToan ? "Đã thanh toán" : "Chưa thanh toán"}
                 </div>
                 {!bill.ThanhToan && !bill.Huy ? (
                   <div
@@ -88,8 +88,8 @@ const BillOfSaleTBody = () => {
                 )}
               </div>
             </td>
-            <td>
-              <div className="wrapper-status-td">
+            <td style={{textAlign: 'center'}}>
+              <div >
                 <div>{bill.TrangThai}</div>
                 {listStatus.indexOf(bill.TrangThai) >= 0 &&
                   listStatus.indexOf(bill.TrangThai) < 2 && (

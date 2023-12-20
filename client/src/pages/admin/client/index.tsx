@@ -24,13 +24,13 @@ const Client = () => {
         <table>
           <thead>
             <tr>
-              <th>Mã</th>
-              <th>Họ và tên</th>
-              <th>Số điện thoại</th>
-              <th>Ngày sinh</th>
-              <th>Giới tính</th>
-              <th>Email</th>
-              <th>Địa chỉ</th>
+              <th style={{textAlign: 'center'}}>Mã</th>
+              <th style={{textAlign: 'center'}}>Họ và tên</th>
+              <th style={{textAlign: 'center'}}>Số điện thoại</th>
+              <th style={{textAlign: 'center'}}>Ngày sinh</th>
+              <th style={{textAlign: 'center'}}>Giới tính</th>
+              <th style={{textAlign: 'center'}}>Email</th>
+              <th style={{textAlign: 'center'}}>Địa chỉ</th>
               <th style={{ width: "100px" }}></th>
             </tr>
           </thead>

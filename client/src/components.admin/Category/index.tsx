@@ -44,8 +44,8 @@ const Category = () => {
       {categories &&
         categories.map((val, ind) => (
           <tr key={ind}>
-            <td>{val.Ma}</td>
-            <td>{val.Ten}</td>
+            <td style={{textAlign: 'center'}}>{val.Ma}</td>
+            <td style={{textAlign: 'center'}}>{val.Ten}</td>
             <td>
               <div className="wrapper-icon">
                 <Link

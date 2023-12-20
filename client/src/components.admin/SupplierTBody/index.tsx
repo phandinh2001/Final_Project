@@ -54,10 +54,10 @@ const SupplierTBody = () => {
       {listSupplier &&
         listSupplier.map((sup, ind) => (
           <tr key={ind}>
-            <td>{sup.Ma}</td>
-            <td>{sup.Ten}</td>
-            <td>{sup.SDT}</td>
-            <td>{sup.DiaChi}</td>
+            <td style={{textAlign: 'center'}}>{sup.Ma}</td>
+            <td style={{textAlign: 'center'}}>{sup.Ten}</td>
+            <td style={{textAlign: 'center'}}>{sup.SDT}</td>
+            <td style={{textAlign: 'center'}}>{sup.DiaChi}</td>
             <td>
               <div className="wrapper-icon">
                 <Link
