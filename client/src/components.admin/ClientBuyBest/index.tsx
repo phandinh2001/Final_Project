@@ -40,12 +40,12 @@ handlePrev = () => {},}: Props) => {
           <table>
             <thead>
               <tr>
-                <th>STT</th>
+                <th style = {{textAlign: 'center'}}>STT</th>
                 <th></th>
-                <th>Tên Khách hàng</th>
-                <th>Số điện thoại</th>
-                <th>Số ngày sinh</th>
-                <th>Tổng tiền</th>
+                <th style = {{textAlign: 'center'}}>Tên Khách hàng</th>
+                <th style = {{textAlign: 'center'}}>Số điện thoại</th>
+                <th style = {{textAlign: 'center'}}>Ngày sinh</th>
+                <th style = {{textAlign: 'center'}}>Tổng tiền</th>
               </tr>
             </thead>
             <tbody>
@@ -58,7 +58,7 @@ handlePrev = () => {},}: Props) => {
                         check = true;
                         return (
                           <tr key={ind}>
-                            <td>{ind + 1}</td>
+                            <td style = {{textAlign: 'center'}}>{ind + 1}</td>
                             <td height={50} width={60}>
                               {acc.Anh ? (
                                 <Avatar
@@ -75,10 +75,10 @@ handlePrev = () => {},}: Props) => {
                                 </Avatar>
                               )}
                             </td>
-                            <td>{client.Ten}</td>
-                            <td>{client.SDT}</td>
-                            <td>{formatDate(client.NgaySinh)}</td>
-                            <td>{val.total} VND</td>
+                            <td style = {{textAlign: 'center'}}>{client.Ten}</td>
+                            <td style = {{textAlign: 'center'}}>{client.SDT}</td>
+                            <td style = {{textAlign: 'center'}}>{formatDate(client.NgaySinh)}</td>
+                            <td style = {{textAlign: 'center'}}>{val.total} VND</td>
                           </tr>
                         );
                       } else return "";
@@ -87,7 +87,7 @@ handlePrev = () => {},}: Props) => {
                     else
                       return (
                         <tr key={ind}>
-                          <td>{ind + 1}</td>
+                          <td style = {{textAlign: 'center'}}>{ind + 1}</td>
                           <td height={50} width={60}>
                             <Avatar
                               size={40}
@@ -96,10 +96,10 @@ handlePrev = () => {},}: Props) => {
                               {convertNameToAvatar(client.Ten)}
                             </Avatar>
                           </td>
-                          <td>{client.Ten}</td>
-                          <td>{client.SDT}</td>
-                          <td>{formatDate(client.NgaySinh)}</td>
-                          <td>{val.total} VND</td>
+                          <td style = {{textAlign: 'center'}}>{client.Ten}</td>
+                          <td style = {{textAlign: 'center'}}>{client.SDT}</td>
+                          <td style = {{textAlign: 'center'}}>{formatDate(client.NgaySinh)}</td>
+                          <td style = {{textAlign: 'center'}}>{val.total} VND</td>
                         </tr>
                       );
                   }

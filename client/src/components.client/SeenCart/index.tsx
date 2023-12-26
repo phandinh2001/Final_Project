@@ -185,7 +185,7 @@ const SeenCart = ({ idClient, name, phone, address, note }: Props) => {
                 <RadioGroup onChange={handlePayment} value={pay}>
                   <Radio value="later-money">Thanh toán khi nhận hàng</Radio>
                   <Radio value={"paypal"}>Thanh toán bằng Paypal</Radio>
-                  {/* <Radio value={"vnPay"} disabled>Thanh toán bằng VNPay</Radio> */}
+                  <Radio value={"vnPay"} >Thanh toán bằng VNPay</Radio>
                 </RadioGroup>
               </div>
             </fieldset>

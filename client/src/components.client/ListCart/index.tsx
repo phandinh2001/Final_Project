@@ -64,12 +64,12 @@ const ListCart = ({ idClient }: Props) => {
           <table>
             <thead>
               <tr>
-                <th style={{ width: "300px" }}>Tên sản phẩm</th>
-                <th>Đơn giá</th>
-                <th>màu</th>
-                <th>Kích thước</th>
-                <th>Số lượng</th>
-                <th>Tổng tiền</th>
+                <th style={{ width: "300px", textAlign: 'center' }}>Tên sản phẩm</th>
+                <th style={{ textAlign: 'center' }}>Đơn giá</th>
+                <th style={{ textAlign: 'center' }}>Màu</th>
+                <th style={{ textAlign: 'center' }}>Kích thước</th>
+                <th style={{ textAlign: 'center' }}>Số lượng</th>
+                <th style={{ textAlign: 'center' }}>Tổng tiền</th>
                 <th></th>
               </tr>
             </thead>
@@ -79,13 +79,13 @@ const ListCart = ({ idClient }: Props) => {
                   if (val.MaSP === pro.Ma)
                     return (
                       <tr key={ind}>
-                        <td style={{ padding: "20px 0px 20px 10px" }}>
+                        <td style={{ padding: "20px 0px 20px 10px", textAlign: 'center' }}>
                           <div className="name-product-limit-1">{pro.Ten}</div>
                         </td>
-                        <td>{val.DonGia}</td>
-                        <td>{val.Mau}</td>
-                        <td>{val.KichThuoc}</td>
-                        <td>
+                        <td style={{ textAlign: 'center' }}>{val.DonGia}</td>
+                        <td style={{ textAlign: 'center' }}>{val.Mau}</td>
+                        <td style={{ textAlign: 'center' }}>{val.KichThuoc}</td>
+                        <td style={{ textAlign: 'center' }}>
                           <input
                             defaultValue={val.SoLuong}
                             type="number"
@@ -93,7 +93,7 @@ const ListCart = ({ idClient }: Props) => {
                             min={1}
                           />
                         </td>
-                        <td>{val.DonGia * val.SoLuong}</td>
+                        <td style={{ textAlign: 'center' }}>{val.DonGia * val.SoLuong}</td>
                         <td>
                           <div
                             className="icon bg-color-delete"

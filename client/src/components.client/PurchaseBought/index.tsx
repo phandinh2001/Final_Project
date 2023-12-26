@@ -45,10 +45,10 @@ const PurchaseBought = ({ idClient }: Props) => {
         <table>
           <thead>
             <tr>
-              <th>Ngày lập</th>
-              <th>Tổng tiền</th>
-              <th>Thanh toán</th>
-              <th className="col-status">Trạng thái</th>
+              <th style={{textAlign: 'center'}}>Ngày lập</th>
+              <th style={{textAlign: 'center'}}>Tổng tiền</th>
+              <th style={{textAlign: 'center'}}>Thanh toán</th>
+              <th style={{textAlign: 'center'}}>Trạng thái</th>
               <th></th>
             </tr>
           </thead>
@@ -59,10 +59,10 @@ const PurchaseBought = ({ idClient }: Props) => {
                   if (bill.TrangThai === "Đã giao")
                     return (
                       <tr key={ind}>
-                        <td>{new Date(bill.Ngay).toLocaleDateString()}</td>
-                        <td>{bill.TongTien}</td>
-                        <td>
-                          <div className="wrapper-pay-td">
+                        <td style={{textAlign: 'center'}}>{new Date(bill.Ngay).toLocaleDateString()}</td>
+                        <td style={{textAlign: 'center'}}>{bill.TongTien}</td>
+                        <td style={{textAlign: 'center'}}>
+                          <div >
                             <div>
                               {bill.ThanhToan
                                 ? "Đã thanh toán"
@@ -70,8 +70,8 @@ const PurchaseBought = ({ idClient }: Props) => {
                             </div>
                           </div>
                         </td>
-                        <td>
-                          <div className="wrapper-status-td">
+                        <td style={{textAlign: 'center'}}>
+                          <div >
                             <div>{bill.TrangThai}</div>
                           </div>
                         </td>
