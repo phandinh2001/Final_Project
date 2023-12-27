@@ -52,7 +52,7 @@ const ProductItem = ({ product }: Props) => {
   );
   const { detailProItem } = useSelector((state: RootState) => state.detailPro);
   const { listCart } = useSelector((state: RootState) => state.cart);
-    
+
   useEffect(() => {
     const objectSize = Object.entries(product.KichThuoc_Mau).map(
       (val) => val[1]
@@ -133,7 +133,7 @@ const ProductItem = ({ product }: Props) => {
                 DonGia: (product.GiaBan * (100 - product.KhuyenMai)) / 100,
               },
               navigate: () => {
-                alert("thêm vào giỏ hàng thành công");
+                alert("Thêm vào giỏ hàng thành công");
               },
             })
           );
@@ -149,7 +149,7 @@ const ProductItem = ({ product }: Props) => {
               },
             })
           );
-          alert("thêm vào giỏ hàng thành công");
+          alert("Thêm vào giỏ hàng thành công");
         } else
           alert(
             "Số lượng trong cửa hàng và số lượng chọn vượt quá số lượng sản phẩm"
@@ -186,12 +186,12 @@ const ProductItem = ({ product }: Props) => {
       return true;
     }
     if (Number(quantityBuy.value) > quantity) {
-      quantityBuy.setHelperText("số lượng hàng không đủ");
+      quantityBuy.setHelperText("Số lượng hàng không đủ");
       quantityBuy.setIsErr(true);
       return true;
     }
     if (Number(quantityBuy.value) < 1) {
-      quantityBuy.setHelperText("số lượng phải lớn hơn hoặc bằng 1");
+      quantityBuy.setHelperText("Số lượng phải lớn hơn hoặc bằng 1");
       quantityBuy.setIsErr(true);
       return true;
     }
@@ -349,14 +349,14 @@ const ProductItem = ({ product }: Props) => {
               </tr>
               <tr>
                 <td></td>
-                <td>
-                  <div className="btn" style={{ marginTop: "30px"}}>
-                    <Button color="accentPrimary" onPress={handleAddToCart}>
+                <td style={{ display: 'flex' }}>
+                  <div style={{ marginTop: 30, marginRight: 30 }}>
+                    <button style={{ backgroundColor: '#f16654', color: 'white', padding: '7px 10px', borderRadius: 10, fontWeight: 'bold' }} onClick={handleAddToCart}>
                       Thêm vào giỏ hàng
-                    </Button>
+                    </button>
                   </div>
-                  <div className="btn" style={{ marginTop: "30px" }}>
-                    <Button onPress={handleBack}>Quay lại</Button>
+                  <div style={{ marginTop: 30 }}>
+                    <button style={{ backgroundColor: 'blue', color: 'white', padding: '7px 10px', borderRadius: 10, fontWeight: 'bold' }} onClick={handleBack}>Quay lại</button>
                   </div>
                 </td>
               </tr>

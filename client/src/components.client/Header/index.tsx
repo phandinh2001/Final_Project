@@ -142,7 +142,7 @@ const Header = ({ avtStr }: Props) => {
         id="ftco-navbar"
       >
         <div className="container">
-          <Link to={"/"} className="navbar-brand" style={{fontSize: 40, fontWeight: 300, fontFamily: 'Script'}}>
+          <Link to={"/"} className="navbar-brand" style={{ fontSize: 40, fontWeight: 300, fontFamily: 'Script' }}>
             DPV
           </Link>
           <button
@@ -170,9 +170,9 @@ const Header = ({ avtStr }: Props) => {
                 </li>
               ))}
               <li className="nav-item cta cta-colored item">
-                <Link to={"/cart"} className="nav-link">
-                  <span className="icon-shopping_cart"></span>[{listCart.length}
-                  ]
+                <Link to={"/cart"} className="nav-link" >
+                  <span style={{ fontSize: 15 }} className="icon-shopping_cart"></span>
+                  <span >[{listCart.length}]</span>
                 </Link>
               </li>
               <li className="nav-item nav-item-avt">

@@ -149,12 +149,12 @@ const SeenCart = ({ idClient, name, phone, address, note }: Props) => {
           <table>
             <thead>
               <tr>
-                <th style={{ width: "300px" }}>Tên sản phẩm</th>
-                <th>Đơn giá</th>
-                <th>màu</th>
-                <th>Kích thước</th>
-                <th>Số lượng</th>
-                <th>Tổng tiền</th>
+                <th style={{ width: "300px", textAlign: 'center'}}>Tên sản phẩm</th>
+                <th style={{textAlign: 'center'}}>Đơn giá</th>
+                <th style={{textAlign: 'center'}}>Màu</th>
+                <th style={{textAlign: 'center'}}>Kích thước</th>
+                <th style={{textAlign: 'center'}}>Số lượng</th>
+                <th style={{textAlign: 'center'}}>Tổng tiền</th>
               </tr>
             </thead>
             <tbody>
@@ -166,11 +166,11 @@ const SeenCart = ({ idClient, name, phone, address, note }: Props) => {
                         <td style={{ padding: "20px 30px 20px 10px" }}>
                           {pro.Ten}
                         </td>
-                        <td>{val.DonGia}</td>
-                        <td>{val.Mau}</td>
-                        <td>{val.KichThuoc}</td>
-                        <td>{val.SoLuong}</td>
-                        <td>{val.DonGia * val.SoLuong}</td>
+                        <td style={{textAlign: 'center'}}>{val.DonGia}</td>
+                        <td style={{textAlign: 'center'}}>{val.Mau}</td>
+                        <td style={{textAlign: 'center'}}>{val.KichThuoc}</td>
+                        <td style={{textAlign: 'center'}}>{val.SoLuong}</td>
+                        <td style={{textAlign: 'center'}}>{val.DonGia * val.SoLuong}</td>
                       </tr>
                     );
                   return "";

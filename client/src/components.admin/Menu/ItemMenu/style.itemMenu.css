@@ -11,7 +11,7 @@
 }
 .wrapper-children-item-menu > .icon-right,
 .wrapper-children-item-menu > .icon-left {
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 .wrapper-children-item-menu > .icon-right{
     position: absolute;

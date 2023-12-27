@@ -58,10 +58,10 @@ const ProductBestSale = ({
         <table>
           <thead>
             <tr>
-              <th>STT</th>
-              <th></th>
-              <th style={{ width: "300px" }}>Tên sản phẩm</th>
-              <th>Đã bán</th>
+              <th style={{textAlign: 'center'}}>STT</th>
+              <th style={{textAlign: 'center'}}></th>
+              <th style={{ width: "300px", textAlign: 'center' }}>Tên sản phẩm</th>
+              <th style={{textAlign: 'center'}}>Đã bán</th>
               <th></th>
             </tr>
           </thead>
@@ -71,14 +71,14 @@ const ProductBestSale = ({
                 if (val.idPro === pro.Ma)
                   return (
                     <tr key={ind}>
-                      <td>{ind + 1}</td>
-                      <td>
+                      <td style={{textAlign: 'center'}}>{ind + 1}</td>
+                      <td style={{textAlign: 'center'}}>
                         <Slider slideImg={pro.Anh} url="/assets/img_product/" />
                       </td>
-                      <td>
+                      <td >
                         <div className="name-product-limit-1">{pro.Ten} </div>
                       </td>
-                      <td>{val.count}</td>
+                      <td style={{textAlign: 'center'}}>{val.count}</td>
                       <td>
                         <div className="wrapper-icon">
                           <div

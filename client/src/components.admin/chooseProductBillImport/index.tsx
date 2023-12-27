@@ -285,11 +285,11 @@ const ChooseProductBillImport = (props: Props) => {
           <table>
             <thead>
               <tr>
-                <th style={{ width: "200px" }}>Sản phẩm</th>
-                <th>Màu</th>
-                <th>Kích thước</th>
-                <th>Giá Nhập</th>
-                <th>Số lượng</th>
+                <th style={{ width: "200px", textAlign: 'center' }}>Sản phẩm</th>
+                <th style={{textAlign: 'center'}}>Màu</th>
+                <th style={{textAlign: 'center'}}>Kích thước</th>
+                <th style={{textAlign: 'center'}}>Giá Nhập</th>
+                <th style={{textAlign: 'center'}}>Số lượng</th>
                 <th></th>
               </tr>
             </thead>
@@ -297,10 +297,10 @@ const ChooseProductBillImport = (props: Props) => {
               {listProChoose.map((val, ind) => (
                 <tr key={ind}>
                   <td style={{ paddingRight: "10px" }}>{val.product.Ten}</td>
-                  <td>{val.color}</td>
-                  <td>{val.size}</td>
-                  <td>{val.product.GiaNhap}</td>
-                  <td>
+                  <td style={{textAlign: 'center'}}>{val.color}</td>
+                  <td style={{textAlign: 'center'}}>{val.size}</td>
+                  <td style={{textAlign: 'center'}}>{val.product.GiaNhap}</td>
+                  <td style={{textAlign: 'center'}}>
                     <input
                       value={val.quantity}
                       type="number"

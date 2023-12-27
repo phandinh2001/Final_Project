@@ -19,21 +19,29 @@ const Footer = () => {
           <div className="row mb-5">
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
-                <h2 className="ftco-heading-2" style={{fontSize: 30}}>DPV</h2>
+                <h2 className="ftco-heading-2" style={{ fontSize: 30 }}>DPV</h2>
                 <ul className="ftco-footer-social list-unstyled float-md-left float-lft">
                   <li className="">
-                    <Link to={"#"}>
-                      <span className="icon-twitter"></span>
+                    <Link to={"#"} style={{ background: 'none' }}>
+                      <span style={{ color: 'white', backgroundColor: "#3399ff", borderRadius: 5, padding: 4 }} className="icon-twitter"></span>
                     </Link>
                   </li>
                   <li className="">
-                    <Link to={"#"}>
-                      <span className="icon-facebook"></span>
+                    <Link to={"#"} style={{ background: 'none' }}>
+                      <span style={{ color: 'blue', fontSize: 35, marginTop: 3 }} className="icon-facebook"></span>
                     </Link>
                   </li>
                   <li className="">
-                    <Link to={"#"}>
-                      <span className="icon-instagram"></span>
+                    <Link to={"#"} style={{ background: 'none' }}>
+                      <span style={{
+                        borderRadius: 10,
+                        color: '#fff',
+                        fontSize: 35,
+                        verticalAlign: 'middle',
+                        backgroundColor: '#d6249f',
+                        background: 'radial - gradient(circle at 30 % 107 %, #fdf497 0 %, #fdf497 5 %, #fd5949 45 %, #d6249f 60 %,#285AEB 90 %)',
+                        boxShadow: ' 0px 3px 10px rgba(0,0,0,.25)'
+                      }} className="icon-instagram"></span>
                     </Link>
                   </li>
                 </ul>
@@ -122,7 +130,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer >
     </>
   );
 };
