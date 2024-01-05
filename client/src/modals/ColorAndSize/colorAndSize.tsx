@@ -132,7 +132,7 @@ const ColorAndSize = ({ openModel, setOpenModel, setCount }: Props) => {
               <div className="wrapper-input">
                 <InputField
                   fullWidth
-                  label="kích thước"
+                  label="Kích thước"
                   value={size.value}
                   helperText={size.helperText}
                   error={size.isErr}

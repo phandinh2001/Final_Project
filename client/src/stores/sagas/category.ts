@@ -39,7 +39,7 @@ export function* deleteCategorySaga(action: PayloadAction<string>) {
       yield put(deleteCategorySuccess(res.data.category._id));
     if (res.data.delete === false)
       yield alert(
-        "không thể xóa loại sản phẩm khi nó đang được sử dụng "
+        "Không thể xóa loại sản phẩm khi nó đang được sử dụng "
       );
   } catch (e) {}
 }

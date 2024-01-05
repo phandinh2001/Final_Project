@@ -39,7 +39,7 @@ export function* updateAdminSaga(action: PayloadAction<any>) {
     yield call(updateAdmin, id, admin);
     yield call(updateUser, admin);
     yield put(updateNameUser(admin.Ten));
-    alert("cập nhật thành công");
+    alert("Cập nhật thành công");
     const user = JSON.parse(localStorage.getItem("user")!);
     user.username = admin.Ten;
     JSON.parse(localStorage.setItem("user", JSON.stringify(user))!);

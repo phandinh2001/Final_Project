@@ -31,7 +31,7 @@ const CreateBrand = ({ setIsCreate }: Props) => {
   const handleCreateBrand = () => {
     if (isErr() === false) {
       dispatch(createBrand({ Ten: name.value }));
-      alert("thêm mới thành công");
+      alert("Thêm mới thành công");
       handleBack();
     }
   };

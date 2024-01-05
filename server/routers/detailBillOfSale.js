@@ -25,7 +25,7 @@ detailBillOfSaleRouter.get("/getDetailBillOfSaleByHashSet", (req, res) => {
             data.push(val)
         })
       })
-      if (data.length < 1) res.send('không có chi tiết hóa đơn');
+      if (data.length < 1) res.send('Không có chi tiết hóa đơn');
       else {
         data.sort((a, b) => {
           if (a.MaSP < b.MaSP) return -1
@@ -33,17 +33,17 @@ detailBillOfSaleRouter.get("/getDetailBillOfSaleByHashSet", (req, res) => {
           return 0
         })
         const hashSet = [];
-        let count = 1;
+        let count = data[0].SoLuong;
         let x = data[0];
         for (let i = 1; i < data.length; i++) {
-          if (data[i].MaSP == x.MaSP) count++;
+          if (data[i].MaSP == x.MaSP) count+= data[i].SoLuong;
           else {
             hashSet.push({
               idPro: x.MaSP,
               count
             })
             x = data[i];
-            count = 1;
+            count = data[i].SoLuong;
           }
         }
         hashSet.push({

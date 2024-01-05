@@ -40,7 +40,7 @@ export function* deleteDetailCateSaga(action: PayloadAction<string>) {
     const res = yield call(deleteDetailCategoryById, id);
     if (res.data.delete === false)
       yield alert(
-        "không thể xóa chi tiết loại sản phẩm khi nó đang được sử dụng "
+        "Không thể xóa chi tiết loại sản phẩm khi nó đang được sử dụng "
       );
     if (res.data.delete === true)
       yield put(deleteDetailCateSuccess(res.data.detailCate._id));

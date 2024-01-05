@@ -1,12 +1,14 @@
 .container-add-cart {
   display: flex;
 }
+
 .container-add-cart tr,
 .container-add-cart td,
 .container-add-cart th {
   border: none;
 }
-.container-add-cart tr td{
+
+.container-add-cart tr td {
   padding: 3px 0;
 }
 
@@ -25,11 +27,21 @@
   cursor: pointer;
   border: 1px solid rgb(160, 160, 160);
 }
+
 .container-add-cart .detail-product {
   margin-left: 30px;
 }
+
 .container-add-cart .active {
   border-color: red;
   background-color: white;
   color: red;
+}
+
+.btn_add_productItem {
+  background-color: blue;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-weight: bold
 }

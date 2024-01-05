@@ -198,7 +198,7 @@ const SeenCart = ({ idClient, name, phone, address, note }: Props) => {
                 // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
                 onSuccess={onSuccessPaypal}
                 onError={() => {
-                  alert("error");
+                  alert("Lỗi");
                 }}
               />
             ) : pay === "vnPay" ? (

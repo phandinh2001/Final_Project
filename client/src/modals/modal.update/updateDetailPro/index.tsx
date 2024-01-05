@@ -58,7 +58,7 @@ const UpdateDetailPro = ({
     <>
       <Modal open={openModel} size="sm">
         <Modal.Header>
-          <Modal.Title>cập nhật chi tiết sản phẩm</Modal.Title>
+          <Modal.Title>Cập nhật chi tiết sản phẩm</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="wrapper-create">
@@ -93,7 +93,7 @@ const UpdateDetailPro = ({
             Cập nhật
           </Button>
           <Button appearance="subtle" onClick={handleCloseModel}>
-            hủy
+            Hủy
           </Button>
         </Modal.Footer>
       </Modal>

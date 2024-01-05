@@ -24,7 +24,7 @@ const CreateDetailPro = ({
     setIdPro(location.pathname.split("/").reverse()[0]);
   }, [location.pathname]);
   const handleCloseModel = () => {
-    alert("thêm mới sản phẩm thành công");
+    alert("Thêm mới sản phẩm thành công");
     navigate("/admin/quan_ly/san_pham");
     setOpenModel(false);
     setCloseCreatePro(false);
@@ -33,7 +33,7 @@ const CreateDetailPro = ({
   const handleCreate = async () => {
     if (ckEditor) {
       await createDetailPro({ MaSP: idPro, ChiTiet: ckEditor });
-      alert("thêm mới sản phẩm thành công");
+      alert("Thêm mới sản phẩm thành công");
       navigate("/admin/quan_ly/san_pham");
       setCloseCreatePro(false);
       setOpenModel(false);
@@ -46,7 +46,7 @@ const CreateDetailPro = ({
     <>
       <Modal open={openModel} size="sm">
         <Modal.Header>
-          <Modal.Title>cập nhật chi tiết sản phẩm</Modal.Title>
+          <Modal.Title>Cập nhật chi tiết sản phẩm</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="wrapper-create">
@@ -63,10 +63,10 @@ const CreateDetailPro = ({
         </Modal.Body>
         <Modal.Footer>
           <Button appearance="primary" onClick={handleCreate}>
-            thêm mới
+            Thêm mới
           </Button>
           <Button appearance="subtle" onClick={handleCloseModel}>
-            hủy
+            Hủy
           </Button>
         </Modal.Footer>
       </Modal>

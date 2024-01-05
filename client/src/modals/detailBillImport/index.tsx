@@ -84,33 +84,33 @@ const DetailBillImport = ({ bill, setIsCreate, url = "" }: Props) => {
             <table>
               <thead>
                 <tr>
-                  <th style={{textAlign: 'center'}}>Mã</th>
+                  <th style={{ textAlign: 'center' }}>Mã</th>
                   <th style={{ width: "300px", textAlign: 'center' }}>Tên sản phẩm</th>
-                  <th style={{textAlign: 'center'}}>Đơn giá</th>
-                  <th style={{textAlign: 'center'}}>Số lượng</th>
-                  <th style={{textAlign: 'center'}}>Màu</th>
-                  <th style={{textAlign: 'center'}}>Kích thước</th>
-                  <th style={{textAlign: 'center'}}>Thành tiền</th>
+                  <th style={{ textAlign: 'center' }}>Đơn giá</th>
+                  <th style={{ textAlign: 'center' }}>Số lượng</th>
+                  <th style={{ textAlign: 'center' }}>Màu</th>
+                  <th style={{ textAlign: 'center' }}>Kích thước</th>
+                  <th style={{ textAlign: 'center' }}>Thành tiền</th>
                 </tr>
               </thead>
               <tbody>
-                {listDetailBill.map((detailBill, ind) => {
+                {listDetailBill.map((detailBill: any, ind: any) => {
                   return (
                     <tr key={ind}>
-                      <td style={{textAlign: 'center'}}>{detailBill.MaSP}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.MaSP}</td>
                       <td style={{ padding: "5px 0" }}>
                         {listProduct &&
                           listProduct.map((pro, i) => {
                             if (pro.Ma === detailBill.MaSP)
-                              return <div style={{textAlign: 'center'}} key={i}>{pro.Ten}</div>;
+                              return <div style={{ textAlign: 'center' }} key={i}>{pro.Ten}</div>;
                             return <div key={i}></div>;
                           })}
                       </td>
-                      <td style={{textAlign: 'center'}}>{detailBill.DonGia}</td>
-                      <td style={{textAlign: 'center'}}>{detailBill.SoLuong}</td>
-                      <td style={{textAlign: 'center'}}>{detailBill.Mau}</td>
-                      <td style={{textAlign: 'center'}}>{detailBill.KichThuoc}</td>
-                      <td style={{textAlign: 'center'}}>{detailBill.ThanhTien}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.DonGia}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.SoLuong}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.Mau}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.KichThuoc}</td>
+                      <td style={{ textAlign: 'center' }}>{detailBill.ThanhTien}</td>
                     </tr>
                   );
                 })}

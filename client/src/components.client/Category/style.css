@@ -7,6 +7,8 @@
 }
 .cate-item:hover {
   background-color: rgb(210, 210, 210);
+  border-radius: 5px;
+  padding-left: 20px;
 }
 .detail-cate-item{
     cursor: pointer;

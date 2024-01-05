@@ -43,7 +43,7 @@ const UpdateAddress = (props: Props) => {
       props.setPhone(phoneInput.value);
       props.setAddress(addressInput.value);
       props.setNote(noteInput.value);
-      alert("cập nhật thành công");
+      alert("Cập nhật thành công");
       handleBack();
     }
   };

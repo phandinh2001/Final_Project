@@ -43,7 +43,7 @@ export function* deleteSupplierSaga(action: PayloadAction<string>) {
     const id = action.payload;
     const res = yield call(deleteSupplier, id);
     if (res.data.delete === true) yield put(deleteSupplierSuccess(id));
-    if (res.data.delete === false) yield alert("không thể xóa nhà cung cấp");
+    if (res.data.delete === false) yield alert("Không thể xóa nhà cung cấp");
   } catch (e) {}
 }
 export function* updateSupplierSaga(action: PayloadAction<any>) {

@@ -42,7 +42,7 @@ const DeleteModel = ({
             Xóa
           </Button>
           <Button onClick={handleCloseModel} appearance="subtle">
-            hủy
+            Hủy
           </Button>
         </Modal.Footer>
       </Modal>

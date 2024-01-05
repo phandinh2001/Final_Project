@@ -53,10 +53,10 @@ detailCategoryRouter.delete("/:id", (req, res) => {
             res.json({ delete: true, detailCate: data });
           });
       });
-      else res.status(404).send("không tìm thấy chi tiết loại sản phẩm");
+      else res.status(404).send("Không tìm thấy chi tiết loại sản phẩm");
     });
   }
-  else res.status(404).send("không có  id");
+  else res.status(404).send("Không có  id");
 });
 
 detailCategoryRouter.put("/:id", (req, res) => {
@@ -64,7 +64,7 @@ detailCategoryRouter.put("/:id", (req, res) => {
   const detailCate = req.body;
   updateDetailCate(id, detailCate).then((data) => {
     if (data) res.json(data);
-    else res.status(404).send("không tìm thấy loại sản phẩm");
+    else res.status(404).send("Không tìm thấy loại sản phẩm");
   });
 });
 export default detailCategoryRouter;

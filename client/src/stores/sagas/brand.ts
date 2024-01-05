@@ -33,6 +33,6 @@ export function* deleteBrandSaga(action: PayloadAction<string>) {
     const id = action.payload;
     const res = yield call(deleteBrand, id);
     if (res.data.delete === true) yield put(deleteBrandSuccess(id));
-    if (res.data.delete === false) yield alert("không thể xóa thương hiệu");
+    if (res.data.delete === false) yield alert("Không thể xóa thương hiệu");
   } catch (e) {}
 }

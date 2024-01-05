@@ -84,10 +84,10 @@ const UpdateDetailCate = ({
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={handleUpdate} appearance="primary">
-            cập nhật
+            Cập nhật
           </Button>
           <Button onClick={handleCloseModel} appearance="subtle">
-            hủy
+            Hủy
           </Button>
         </Modal.Footer>
       </Modal>

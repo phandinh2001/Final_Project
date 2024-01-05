@@ -22,7 +22,7 @@ cartRouter.put("/:id", (req, res) => {
             res.json(data)
         })
     } else {
-        res.status(404).send('không có mã sản phẩm trong giỏ hàng')
+        res.status(404).send('Không có mã sản phẩm trong giỏ hàng')
     }
 });
 cartRouter.delete("/:id", (req, res) => {
@@ -32,7 +32,7 @@ cartRouter.delete("/:id", (req, res) => {
             res.json(data)
         })
     } else {
-        res.status(404).send('không có mã sản phẩm trong giỏ hàng')
+        res.status(404).send('Không có mã sản phẩm trong giỏ hàng')
     }
 });
 cartRouter.post("/", (req, res) => {

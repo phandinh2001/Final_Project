@@ -6,6 +6,9 @@ import { RootState } from "../../../stores";
 import { getAllProduct } from "../../../stores/slices/productSlice";
 
 import "./style.css";
+
+let IND = 1;
+
 const Section_3 = () => {
   const dispatch = useDispatch();
   const { listHashSet } = useSelector(
@@ -17,13 +20,15 @@ const Section_3 = () => {
     dispatch(getAllProduct());
   }, [dispatch]);
 
+
+
   return (
     <>
       <section className="ftco-section bg-light">
         <div className="container">
           <div className="row justify-content-center mb-3 pb-3">
             <div className="col-md-12 heading-section text-center ">
-              <h2 className="mb-4" style={{fontWeight: 300, textTransform: 'uppercase', letterSpacing: 1, fontSize: 36}}>Sản phẩm bán chạy nhất</h2>
+              <h2 className="mb-4" style={{ fontWeight: 300, textTransform: 'uppercase', letterSpacing: 1, fontSize: 36 }}>Sản phẩm bán chạy nhất</h2>
             </div>
           </div>
         </div>
@@ -31,13 +36,14 @@ const Section_3 = () => {
           <div className="row">
             {listHashSet &&
               listHashSet.map((bill: any, index: any) => {
-                if (index < 4)
-                  return (
-                    <div key={index} className="col-sm col-md-6 col-lg">
-                      {listProduct &&
-                        listProduct.map((product: any, ind: any) => {
-                          if (bill.idPro === product.Ma)
-                            return (
+                return (
+                  <>
+                    {listProduct &&
+                      listProduct.map((product: any, ind: any) => {
+                        if (bill.idPro === product.Ma && IND < 5) {
+                          IND++;
+                          return (
+                            <div key={index} className="col-sm col-md-6 col-lg">
                               <div className="product" key={ind}>
                                 <Link to={"/shop/" + product._id} className="img-prod">
                                   <img
@@ -85,12 +91,12 @@ const Section_3 = () => {
                                   </p>
                                 </div>
                               </div>
-                            );
-                          return "";
-                        })}
-                    </div>
-                  );
-                return "";
+                            </div>
+                          );
+                        }
+                      })}
+                  </>
+                );
               })}
           </div>
         </div>

@@ -89,7 +89,7 @@ export function* updateInformationClientSaga(action: PayloadAction<any>) {
     yield call(updateInformationClient, id, client);
     yield call(updateUser, client);
     yield put(updateNameUser(client.Ten));
-    alert("cập nhật thành công");
+    alert("Cập nhật thành công");
     const user = JSON.parse(localStorage.getItem("user")!);
     user.username = client.Ten;
     JSON.parse(localStorage.setItem("user", JSON.stringify(user))!);

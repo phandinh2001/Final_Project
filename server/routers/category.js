@@ -41,9 +41,9 @@ categoryRouter.delete("/:id", (req, res) => {
               res.json({ delete: true, category: data });
             });
         });
-      } else res.status(404).send("không tìm thấy loại sản phẩm");
+      } else res.status(404).send("Không tìm thấy loại sản phẩm");
     });
-  else res.status(404).send("không có id");
+  else res.status(404).send("Không có id");
 });
 
 categoryRouter.put("/:id", (req, res) => {
@@ -51,7 +51,7 @@ categoryRouter.put("/:id", (req, res) => {
   const category = req.body;
   updateCategoryById(id, category).then((data) => {
     if (data) res.json(data);
-    else res.status(404).send("không tìm thấy loại sản phẩm");
+    else res.status(404).send("Không tìm thấy loại sản phẩm");
   });
 });
 
